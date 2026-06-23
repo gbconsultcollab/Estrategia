@@ -1,0 +1,18 @@
+Options -Indexes
+
+# Charset
+AddDefaultCharset UTF-8
+
+# Cache para HTML
+<FilesMatch "\.(html)$">
+  Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+
+# Redirect raiz para index.html se não existir outro arquivo
+DirectoryIndex index.html
+
+# Bloquear acesso a arquivos sensíveis
+<FilesMatch "\.(yml|yaml|git|env|sh)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

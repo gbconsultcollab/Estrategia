@@ -1,0 +1,26 @@
+# dependências
+node_modules/
+vendor/
+
+# build intermediário
+src/
+components/
+lib/
+dist/
+.cache/
+
+# ambiente
+.env
+.env.*
+*.log
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# git interno (nunca publicar)
+.git/
